@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="keyboard.css">
+
+    <title>KEYBOARD</title>
+
+</head>
+
+<body>
+
+<!----------------------------------Img file------------------------------------------------------------------------>
+
+    <img src="moon1.png" id="icon" onclick="myFunction()">
+
+<div class="keyboard">
+<!----------------------------------Textarea------------------------------------------------------------------------>
+
+    <div class="screen"><textarea  class="t" id="t" placeholder=" "></textarea></div>
+        
+        <div class="keyboard">
+<!----------------------------------First-row----------------------------------------------------------------------->
+
+        <ul class="row row-6">
+        
+        <form> <nav> <button class="esc"class="btn" title="Refresh page"><b>Esc</b></button> </nav></form>
+                <button class="smaller" class="btn"  onclick="show('F1')"><b>F1</b></button>
+                <button class="smaller" class="btn"  onclick="show('F2')"><b>F2</b></button>
+                <button class="smaller" class="btn"  onclick="show('F3')"><b>F3</b></button>
+                <button class="smaller" class="btn"  onclick="show('F4')"><b>F4</b></button>
+                <button class="smaller" class="btn"  onclick="show('F5')"><b>F5</b></button>
+                <button class="smaller" class="btn"  onclick="show('F6')"><b>F6</b></button>
+                <button class="smaller" class="btn"  onclick="show('F7')"><b>F7</b></button>
+                <button class="smaller" class="btn"  onclick="show('F8')"><b>F8</b></button>
+                <button class="smaller" class="btn"  onclick="show('F9')"><b>F9</b></button>
+                <button class="smaller" class="btn"  onclick="show('F10')"><b>F10</b></button>
+                <button class="smaller" class="btn"  onclick="show('F11')"><b>F11</b></button>
+                <button class="smaller" class="btn"  onclick="show('F12')"><b>F12</b></button>
+                <button class="smaller" class="btn"  onclick="show('PrtScr')"><b>PrtScr</b></button>
+                <button class="smaller" class="btn"  onclick="show('Insert')"><b>Insert</b></button>
+                <button class="delete"  class="btn" onclick=" display.value = ('')" title="Delete all" ><b>Delete</b></button>
+            </ul>
+
+<!----------------------------------Second-row---------------------------------------------------------------------->
+
+                <ul class="row row-0">
+                
+                <button class="btn" onclick="show('`')"><b>`</b></button>
+                <button class="btn" onclick="show('1')"><b>1</b></button>
+                <button class="btn" onclick="show('2')"><b>2</b></button>
+                <button class="btn" onclick="show('3')"><b>3</b></button>
+                <button class="btn" onclick="show('4')"><b>4</b></button>
+                <button class="btn" onclick="show('5')"><b>5</b></button>
+                <button class="btn" onclick="show('6')"><b>6</b></button>
+                <button class="btn" onclick="show('7')"><b>7</b></button>
+                <button class="btn" onclick="show('8')"><b>8</b></button>
+                <button class="btn" onclick="show('9')"><b>9</b></button>
+                <button class="btn" onclick="show('10')"><b>0</b></button>
+                <button class="btn" onclick="show('-')"><b>-</b></button>
+                <button class="btn" onclick="show('+')"><b>+</b></button> 
+                <!-- <button class="symbol" onclick="calc('=')"><b>=</b></button> -->
+                <button class="back" onclick="display.value = display.value.toString().slice(0,-1)" title="Delete last letter"><b>Back</b></button>
+                </ul> 
+
+<!----------------------------------Third-row----------------------------------------------------------------------->
+            
+            <ul class="row row-1">
+            
+            <button class="tab" class="btn" id="tab_btn" onclick="show('')"><b>Tab</b></button> 
+            <button class="btn" onclick="show('q')"><b>q</b></button> 
+            <button class="btn" id="wasd" onclick="show('w')"><b>w</b></button> 
+            <button class="btn" onclick="show('e')"><b>e</b></button> 
+            <button class="btn" onclick="show('r')"><b>r</b></button> 
+            <button class="btn" onclick="show('t')"><b>t</b></button> 
+            <button class="btn" onclick="show('y')"><b>y</b></button> 
+            <button class="btn" onclick="show('u')"><b>u</b></button> 
+            <button class="btn" onclick="show('i')"><b>i</b></button> 
+            <button class="btn" onclick="show('o')"><b>o</b></button> 
+            <button class="btn" onclick="show('p')"><b>p</b></button> 
+            <button class="btn" onclick="show('[')"><b>[</b></button>
+            <button class="btn" onclick="show(']')"><b>]</b></button>
+            <button class="btn" onclick="show('\\')"><b>\</b></button>
+            </ul>
+
+<!----------------------------------Fourth-row---------------------------------------------------------------------->
+
+            <ul class="row row-2">
+            
+            <button class="caps" id="caps" class="btn" ><b>Caps</b></button> 
+            <button class="btn" id="wasd" onclick="show('a')"><b>a</b></button> 
+            <button class="btn" id="wasd" onclick="show('s')"><b>s</b></button> 
+            <button class="btn" id="wasd" onclick="show('d')"><b>d</b></button> 
+            <button class="btn" onclick="show('f')"><b>f</b></button> 
+            <button class="btn" onclick="show('g')"><b>g</b></button> 
+            <button class="btn" onclick="show('h')"><b>h</b></button> 
+            <button class="btn" onclick="show('j')"><b>j</b></button> 
+            <button class="btn" onclick="show('k')"><b>k</b></button> 
+            <button class="btn" onclick="show('l')"><b>l</b></button> 
+            <button class="btn" onclick="show(';')"><b>;</b></button> 
+            <button class="btn" onclick="show('\'')"><b>'</b></button> 
+            <button class="enter" onclick="calc()"><b>Enter</b></button> 
+            </ul>
+
+<!----------------------------------Fifth-row----------------------------------------------------------------------->
+
+            <ul class="row row-3">
+            
+            <button class="shift"><b>Shift</b></button> 
+            <button class="btn" onclick="show('z')"><b>z</b></button> 
+            <button class="btn" onclick="show('x')"><b>x</b></button> 
+            <button class="btn" onclick="show('c')"><b>c</b></button> 
+            <button class="btn" onclick="show('v')"><b>v</b></button> 
+            <button class="btn" onclick="show('b')"><b>b</b></button> 
+            <button class="btn" onclick="show('n')"><b>n</b></button> 
+            <button class="btn" onclick="show('m')"><b>m</b></button> 
+            <button class="btn" onclick="show(',')"><b>,</b></button> 
+            <button class="btn" onclick="show('.')"><b>.</b></button> 
+            <button class="btn" onclick="show('/')"><b>/</b></button> 
+            <button class="shift2" class="btn"><b>Shift</b></button>  
+            </ul>
+<!----------------------------------Sixth-row----------------------------------------------------------------------->
+
+            <ul class="row row-4">
+            
+            <button  class="ctrl"class="btn"  ><b>Ctrl</b></button> 
+            <button  class="fn"  class="btn" ><b>Fn</b></button> 
+            <button  class="win" class="btn" ><b><svg style="color: rgb(195, 39, 39); "  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows" viewBox="0 0 16 16"> <path d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z" fill="#c32727"></path> </svg></path> </svg></path> </svg></b></button> 
+            <button  class="alt" class="btn" ><b>Alt</b></button> 
+            <button  style="margin-right: 20px;" class="space" id="space-btn" onclick="show(' ')"><b>Space</b></button> 
+            <button  class="alt" class="btn" ><b>Alt</b></button> 
+            <button  class="ctrl" class="btn" ><b>Ctrl</b></button> 
+
+<!----------------------------------Direction-butttons-------------------------------------------------------------->
+
+            <div><ul class="row row-5"></ul>
+            
+            <button  class="up" class="btn" ><b>Up</b></button> 
+            <button  class="left" class="btn" ><b>Left</b></button> 
+            <button  class="down" class="btn" ><b>Down</b></button> 
+            <button  class="right" class="btn"><b>Right</b></button> 
+            </ul>
+        </div>
+
+<!----------------------------------JS file------------------------------------------------------------------------->
+
+                        <script  src="keyboard.js"></script> 
+</body>
+</html>
